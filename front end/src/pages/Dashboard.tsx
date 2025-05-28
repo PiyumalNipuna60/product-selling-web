@@ -1,11 +1,17 @@
-import React from 'react';
 import { UsersIcon, ShoppingCartIcon, CreditCardIcon, TrendingUpIcon } from 'lucide-react';
+type StatCardProps = {
+  icon: React.ComponentType<any>;
+  label: string;
+  value: string;
+  trend: string;
+};
+
 const StatCard = ({
   icon: Icon,
   label,
   value,
   trend
-}) => <div className="bg-white bg-opacity-70 backdrop-filter backdrop-blur-lg rounded-xl p-6 shadow-sm">
+}: StatCardProps) => <div className="bg-white bg-opacity-70 backdrop-filter backdrop-blur-lg rounded-xl p-6 shadow-sm">
     <div className="flex items-center justify-between">
       <div>
         <p className="text-sm text-gray-600">{label}</p>

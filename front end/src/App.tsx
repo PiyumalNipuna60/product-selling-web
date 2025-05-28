@@ -12,12 +12,12 @@ export function App() {
           <Route path="/auth" element={<div className="w-full min-h-screen flex justify-center items-center p-4">
                 <AuthCard />
               </div>} />
-          <Route path="/dashboard" element={<DashboardLayout />}>
+          <Route path="/" element={<DashboardLayout />}>
             <Route index element={<Dashboard />} />
             <Route path="users" element={<Users />} />
             <Route path="settings" element={<Settings />} />
           </Route>
-          <Route path="*" element={<Navigate to="/auth" replace />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </div>
     </BrowserRouter>;

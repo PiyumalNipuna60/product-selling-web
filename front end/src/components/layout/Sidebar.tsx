@@ -4,7 +4,7 @@ import { HomeIcon, UsersIcon, SettingsIcon, LogOutIcon } from 'lucide-react';
 const navItems = [{
   icon: HomeIcon,
   label: 'Dashboard',
-  to: '/'
+  to: '/dashboard'
 }, {
   icon: UsersIcon,
   label: 'Users',
