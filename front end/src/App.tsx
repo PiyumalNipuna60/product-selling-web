@@ -4,6 +4,7 @@ import { DashboardLayout } from './components/layout/DashboardLayout';
 import { Dashboard } from './pages/Dashboard';
 import { Users } from './pages/Users';
 import { Settings } from './pages/Settings';
+import { SalesManagement } from './pages/SalesManagement';
 
 export function App() {
   return <BrowserRouter>
@@ -14,6 +15,7 @@ export function App() {
               </div>} />
           <Route path="/" element={<DashboardLayout />}>
             <Route index element={<Dashboard />} />
+               <Route path="sale" element={<SalesManagement />} />
             <Route path="users" element={<Users />} />
             <Route path="settings" element={<Settings />} />
           </Route>
