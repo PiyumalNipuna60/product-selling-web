@@ -40,6 +40,7 @@ export const Dashboard = () => {
       address: '123 Main St, Colombo',
       contact1: '0712345678',
       contact2: '0112345678',
+      status:"pending",
       quantity: 5
     },
     {
@@ -48,6 +49,7 @@ export const Dashboard = () => {
       address: '456 Galle Rd, Kandy',
       contact1: '0776543210',
       contact2: '0812345678',
+      status:"pending",
       quantity: 3
     },
     {
@@ -56,6 +58,7 @@ export const Dashboard = () => {
       address: '789 Marine Dr, Galle',
       contact1: '0765432109',
       contact2: '0912345678',
+      status:"deleverd",
       quantity: 7
     },
     {
@@ -64,6 +67,7 @@ export const Dashboard = () => {
       address: '321 Hill St, Nuwara Eliya',
       contact1: '0754321098',
       contact2: '',
+      status:"processing",
       quantity: 2
     },
     {
@@ -72,6 +76,7 @@ export const Dashboard = () => {
       address: '654 Beach Rd, Negombo',
       contact1: '0723456789',
       contact2: '0312345678',
+      status:"completed",
       quantity: 4
     },
     {
@@ -80,6 +85,7 @@ export const Dashboard = () => {
       address: '654 Beach Rd, Negombo',
       contact1: '0723456789',
       contact2: '0312345678',
+      status:"cancelled",
       quantity: 4
     }
   ];

@@ -6,6 +6,7 @@ interface Sale {
   address: string;
   contact1: string;
   contact2: string;
+  status: string;
   quantity: string;
 }
 interface SalesFormProps {
@@ -27,6 +28,7 @@ export const SalesForm: React.FC<SalesFormProps> = ({
     address: '',
     contact1: '',
     contact2: '',
+    status: 'pending',
     quantity: ''
   });
   useEffect(() => {
@@ -37,6 +39,7 @@ export const SalesForm: React.FC<SalesFormProps> = ({
         
         contact1: currentSale.contact1,
         contact2: currentSale.contact2,
+        status: currentSale.status,
         quantity: currentSale.quantity
       });
     }
@@ -69,6 +72,7 @@ export const SalesForm: React.FC<SalesFormProps> = ({
       address: '',
       contact1: '',
       contact2: '',
+      status: 'pending',
       quantity: ''
     });
   };

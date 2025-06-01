@@ -19,8 +19,8 @@ const navItems = [
   },
   {
     icon: SettingsIcon,
-    label: "Settings",
-    to: "/settings",
+    label: "stock",
+    to: "/stock",
   },
 ];
 interface SidebarProps {

@@ -3,8 +3,8 @@ import { AuthCard } from './components/AuthCard';
 import { DashboardLayout } from './components/layout/DashboardLayout';
 import { Dashboard } from './pages/Dashboard';
 import { Users } from './pages/Users';
-import { Settings } from './pages/Settings';
 import { SalesManagement } from './pages/SalesManagement';
+import { StockManagement } from './pages/StockManagement';
 
 export function App() {
   return <BrowserRouter>
@@ -17,7 +17,7 @@ export function App() {
             <Route index element={<Dashboard />} />
                <Route path="sale" element={<SalesManagement />} />
             <Route path="users" element={<Users />} />
-            <Route path="settings" element={<Settings />} />
+            <Route path="stock" element={<StockManagement />} />
           </Route>
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
